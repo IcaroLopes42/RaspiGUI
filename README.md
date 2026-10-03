@@ -6,7 +6,7 @@ depois mostra animação pixel art + CPU/RAM/IP/status SSH.
 ## 1. Instalação
 
 ```bash
-git clone <seu repo, ou copie os arquivos pro Pi>
+git clone https://github.com/IcaroLopes42/RaspiGUI.git
 cd pi-dashboard
 chmod +x install.sh boot.sh
 ./install.sh
