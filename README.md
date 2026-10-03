@@ -3,23 +3,6 @@
 Dashboard pro Raspberry Pi 3B com tela LCD SPI: checa/configura wifi no boot,
 depois mostra animação pixel art + CPU/RAM/IP/status SSH.
 
-## 0. Antes de instalar: resolva a fonte de alimentação
-
-Se você está vendo `low voltage` no boot, **resolva isso primeiro**. Undervoltage
-durante escrita no SD corrompe o sistema de arquivos silenciosamente e vai fazer
-esse projeto (e qualquer coisa) falhar de forma difícil de debugar.
-
-```bash
-vcgencmd get_throttled
-```
-Qualquer bit setado no histórico (não só agora) indica que já rolou queda de
-tensão. Pi 3B precisa de fonte 5V/2.5A estável — troque o cabo também, não só
-o carregador. Depois de resolver o hardware, rode:
-```bash
-sudo touch /forcefsck && sudo reboot
-```
-pra forçar checagem do filesystem no próximo boot.
-
 ## 1. Instalação
 
 ```bash
