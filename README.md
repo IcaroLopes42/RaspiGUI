@@ -7,7 +7,7 @@ depois mostra animação pixel art + CPU/RAM/IP/status SSH.
 
 ```bash
 git clone https://github.com/IcaroLopes42/RaspiGUI.git
-cd pi-dashboard
+cd RaspiGUI
 chmod +x install.sh boot.sh
 ./install.sh
 ```
